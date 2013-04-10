@@ -1,0 +1,17 @@
+{
+  "name": "directives_tests2",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": null,
+    "underscore": null,
+    "font-awesome": null,
+    "sass-bootstrap": null,
+    "angular-bootstrap": null,
+    "angular-placeholders": null
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/libs"
+  ]
+}
