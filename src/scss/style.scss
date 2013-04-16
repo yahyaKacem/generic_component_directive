@@ -1,0 +1,61 @@
+@import "compass/css3";
+$titleHeight: 50px;
+$bodyHeight: 200px;
+.container.well {
+  margin-top: 75px;
+}
+.slide, .component {
+  margin:  5px;
+  padding: 5px;
+  border:  1px solid #000;
+}
+.textZone{
+  @include box-sizing(border-box);
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 3px;
+}
+.preview-common {
+  @include border-radius(3px);
+}
+.slide {
+  .title {
+    .text-zone {
+      @extend .textZone;
+    }
+    .text-content {
+      min-height: $titleHeight;
+      height: $titleHeight;
+      @extend .textZone;
+    }
+    .preview {
+      @extend .preview-common;
+    }
+  }
+  .body {
+    .text-zone {
+      @extend .textZone;
+    }
+    .text-content {
+      min-height: $bodyHeight;
+      height: $bodyHeight;
+      @extend .textZone;
+    }
+    .preview {
+      @extend .preview-common;
+    }
+  }
+}
+#log {
+  top:        0;
+  left:       0;
+  width:      150px;
+  height:     150px;
+  position:   fixed;
+  background: #cccccc;
+  @include border-radius(5px);
+}
+#log li {
+  color: red;
+}

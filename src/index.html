@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="plunker">
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Plunker</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-controller="MainCtrl">
+  <section class="container well">
+    <section class="static">
+      <div class="slide">
+        <h3>Static Slide with text 1</h3>
+<!--        <text-zone class="title">some content here</text-zone>-->
+        <editor class="title">some title content here</editor>
+      </div>
+      <div class="slide">
+        <h3>Static Slide with text 2</h3>
+<!--        <text-zone class="body">some content here 2</text-zone>-->
+        <editor class="body">some body content here</editor>
+      </div>
+      <div class="slide">
+        <h3>Static Slide with image</h3>
+        <img class="component" ph-img="160x160">
+      </div>
+      <div class="slide">
+        <h3>Static Slide with video</h3>
+        <video
+          controls
+          width="560"
+          height="315"
+          class="component"
+          src="videos/How_to_make_Waterproof_Firesticks.-2IMLSAGTgg4.og"
+        >
+        </video>
+      </div>
+    </section>
+    <div class="content">
+      <slide ng-repeat="slide in slides" components="slide.components"></slide>
+    </div>
+  </section>
+  <div id="log"></div>
+  <script src="libs/angular-unstable/angular.min.js"></script>
+  <script src="libs/angular-placeholders/src/img/img.js"></script>
+  <script src="scripts/vars.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/directives/componentfactory.js"></script>
+  <script src="scripts/directives/slide.js"></script>
+  <script src="scripts/directives/editor.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/services/slides.js"></script>
+  <script src="scripts/services/items.js"></script>
+  <script src="scripts/services/logger.js"></script>
+</body>
+</html>

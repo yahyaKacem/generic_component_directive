@@ -1,0 +1,40 @@
+[
+  {
+    "id":     1,
+    "type":   "editor",
+    "content": [
+        {
+          "text": [
+            "text content from json object"
+          ]
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "image",
+    "content": [
+      {
+        "imageId":   1,
+        "width":     350,
+        "height":    150,
+        "imageSrc":  "350x150",
+        "imageName": "Image 1",
+        "imageAlt":  "alt text for image 1"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "video",
+    "content": [
+      {
+        "videoId": 1,
+        "width":   560,
+        "height":  315,
+        "videoName": "video 1",
+        "videoSrc": "videos/How_to_make_Waterproof_Firesticks.-2IMLSAGTgg4.ogv"
+      }
+    ]
+  }
+]

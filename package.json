@@ -43,7 +43,9 @@
     "name": "Yahya Kacem",
     "email": "fuj.tyoli@gmail.com"
   },
-  "license": "BSD",
+  "licenses": {
+    "type": "BSD"
+  },
   "readmeFilename": "README.md",
   "gitHead": "bdd94b66207a69a13c46691f3b61bbd4d2f40a98"
 }

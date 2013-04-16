@@ -1,0 +1,62 @@
+/* line 4, ../scss/style.scss */
+.container.well {
+  margin-top: 75px;
+}
+
+/* line 7, ../scss/style.scss */
+.slide, .component {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+/* line 12, ../scss/style.scss */
+.textZone, .slide .title .text-zone, .slide .title .text-content, .slide .body .text-zone, .slide .body .text-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 3px;
+}
+
+/* line 19, ../scss/style.scss */
+.preview-common, .slide .title .preview, .slide .body .preview {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 27, ../scss/style.scss */
+.slide .title .text-content {
+  min-height: 50px;
+  height: 50px;
+}
+/* line 40, ../scss/style.scss */
+.slide .body .text-content {
+  min-height: 200px;
+  height: 200px;
+}
+
+/* line 50, ../scss/style.scss */
+#log {
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  background: #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 59, ../scss/style.scss */
+#log li {
+  color: red;
+}
