@@ -75,6 +75,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    docular: {
+      groups: [],
+      showDocularDocs: true,
+      showAngularDocs: true
+    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',

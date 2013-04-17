@@ -48,14 +48,20 @@ $bodyHeight: 200px;
   }
 }
 #log {
-  top:        0;
-  left:       0;
-  width:      150px;
-  height:     150px;
-  position:   fixed;
-  background: #cccccc;
+  top:         0;
+  left:        0;
+  padding:     10px;
+  overflow-y:  auto;
+  margin-top:  10px;
+  margin-left: 10px;
+  width:       150px;
+  height:      150px;
+  position:    fixed;
+  background:  #cccccc;
   @include border-radius(5px);
+  @include box-sizing(border-box);
 }
 #log li {
   color: red;
+  list-style-type: circle;
 }

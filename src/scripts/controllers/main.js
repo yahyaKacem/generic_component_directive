@@ -10,7 +10,7 @@ controllers.MainCtrl = function($scope, Slides, Items, Logger) {
   });
   $scope.logit = function(){
     log("azerty");
-  }
+  };
 };
 //###################END MainCtrl#########################################
 //########################################################################
