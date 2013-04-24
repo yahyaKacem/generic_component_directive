@@ -11,7 +11,6 @@
       <div class="slide">
         <h3>Static Slide with text 1</h3>
         <editor class="title">some title content here</editor>
-<!--        <button class="btn" ng-click="logit()">Logit</button>-->
       </div>
       <div class="slide">
         <h3>Static Slide with text 2</h3>
@@ -34,15 +33,44 @@
       </div>
     </section>
     <div class="content">
-      <slide ng-repeat="slide in slides" components="slide.components"></slide>
+      <slide ng-repeat="slide in slides" slide-id="{{slide.id}}">
+        <component
+          element="component"
+          type="{{component.type}}"
+          ng-repeat="component in slide.components"
+        >
+        </component>
+      </slide>
     </div>
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <panel title="{{title}}">-->
+<!--      <element text="{{body}}"></element>-->
+<!--    </panel>-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <br />-->
+<!--    <panel title="Title of container">-->
+<!--      <element text="body elment here"></element>-->
+<!--      <element text="body elment here"></element>-->
+<!--      <element text="body elment here"></element>-->
+<!--    </panel>-->
   </section>
-  <div id="log"></div>
+  <footer id="log"></footer>
   <script src="libs/angular-unstable/angular.min.js"></script>
   <script src="libs/angular-placeholders/src/img/img.js"></script>
   <script src="scripts/vars.js"></script>
   <script src="scripts/controllers/main.js"></script>
-  <script src="scripts/directives/componentfactory.js"></script>
+  <script src="scripts/directives/component.js"></script>
   <script src="scripts/directives/slide.js"></script>
   <script src="scripts/directives/editor.js"></script>
   <script src="scripts/app.js"></script>

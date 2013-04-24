@@ -4,7 +4,7 @@ directives.editor = function(){
   var linker = function(scope, element, attrs) {};
   return {
     scope: {
-      component: "="
+      element: "="
     },
     replace:     true,
     restrict:    "EA",

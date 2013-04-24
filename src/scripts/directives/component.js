@@ -1,23 +1,24 @@
 //########################################################################
-//###################START componentFactory###############################
-directives.componentFactory = function($compile, Logger){
+//######################START component###################################
+directives.component = function($compile, Logger){
   return {
     scope: {
-      components: "="
+      type:    "@",
+      element: "="
     },
     compile:function(tElement, tAttrs){
       var log = Logger.log;
       var el = tElement[0];
       if(el.getAttribute('type')){
-        el.removeAttribute('type');
         log(tAttrs.type);
+        el.removeAttribute('type');
         el.setAttribute(tAttrs.type,'');
-        return function(scope){
+        return function(scope, element, attrs){
           $compile(el)(scope);
-        }
+        };
       }
     }
   }
 };
-//###################END componentFactory#################################
+//######################END component#####################################
 //########################################################################

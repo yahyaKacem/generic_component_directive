@@ -11,6 +11,8 @@ controllers.MainCtrl = function($scope, Slides, Items, Logger) {
   $scope.logit = function(){
     log("azerty");
   };
+  $scope.title = "Title of container";
+  $scope.body  = "body elment here";
 };
 //###################END MainCtrl#########################################
 //########################################################################

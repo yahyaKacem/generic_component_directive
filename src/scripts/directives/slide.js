@@ -3,8 +3,7 @@
 directives.slide = function() {
   return {
     scope: {
-      id: "@",
-      components: "="
+      slideId: "@"
     },
     replace:     true,
     restrict:    "EA",

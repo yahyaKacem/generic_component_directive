@@ -1,7 +1,6 @@
 <div
-  ng-transclude
   contenteditable="true"
-  class="editor text-content {{component.content.class}}"
+  class="editor text-content"
 >
-  {{component.content.text}}
+  {{element.content.text}}
 </div>

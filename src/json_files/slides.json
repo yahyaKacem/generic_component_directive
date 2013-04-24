@@ -1,70 +1,152 @@
 [
   {
     "id":   1,
-    "class": "active",
-    "show":  true,
     "note": "Notes for Slide 1",
     "components": [
       {
-        "id":     1,
-        "type":   "editor",
-        "content": [
-          {
-            "text": [
-              "Slide 1"
-            ],
-            "class": "title"
-          }
-        ]
+        "id": 1,
+        "type": "editor",
+        "content": {
+          "text": "Slide 1 title"
+        },
+        "top": "12px",
+        "left": "15px",
+        "width": "250px",
+        "height": "30px",
+        "animations": []
       },
       {
-        "id":     2,
-        "type":   "editor",
-        "content": [
-          {
-            "text": [
-              "Body of Slide 1"
-            ],
-            "class": "body"
-          }
-        ]
+        "id": 2,
+        "type": "editor",
+        "content": {
+          "text": "Slide 1 text"
+        },
+        "top": "50px",
+        "left": "10px",
+        "width": "250px",
+        "height": "150px",
+        "animations": []
       }
     ]
   },
   {
-    "id":    2,
-    "class": "",
-    "show":  false,
-    "title": "Slide 2",
-    "type":  "title_and_body",
-    "body":  "Body of Slide 2",
-    "notes": "Notes for Slide 2"
+    "id":   2,
+    "note": "Notes for Slide 2",
+    "components": [
+      {
+        "id": 1,
+        "type": "editor",
+        "content": {
+          "text": "Slide 2 title"
+        },
+        "top": "12px",
+        "left": "15px",
+        "width": "250px",
+        "height": "30px",
+        "animations": []
+      },
+      {
+        "id": 2,
+        "type": "editor",
+        "content": {
+          "text": "Slide 2 text"
+        },
+        "top": "50px",
+        "left": "10px",
+        "width": "250px",
+        "height": "150px",
+        "animations": []
+      }
+    ]
   },
   {
-    "id":    3,
-    "class": "",
-    "show":  false,
-    "title": "Slide 3",
-    "type":  "title_and_body",
-    "body":  "Body of Slide 3",
-    "notes": "Notes for Slide 3"
+    "id":   3,
+    "note": "Notes for Slide 3",
+    "components": [
+      {
+        "id": 1,
+        "type": "editor",
+        "content": {
+          "text": "Slide 3 title"
+        },
+        "top": "12px",
+        "left": "15px",
+        "width": "250px",
+        "height": "30px",
+        "animations": []
+      },
+      {
+        "id": 2,
+        "type": "editor",
+        "content": {
+          "text": "Slide 3 text"
+        },
+        "top": "50px",
+        "left": "10px",
+        "width": "250px",
+        "height": "150px",
+        "animations": []
+      }
+    ]
   },
   {
-    "id":    4,
-    "class": "",
-    "show":  false,
-    "title": "Slide 4",
-    "type":  "title_and_body",
-    "body":  "Body of Slide 4",
-    "notes": "Notes for Slide 4"
+    "id":   4,
+    "note": "Notes for Slide 4",
+    "components": [
+      {
+        "id": 1,
+        "type": "editor",
+        "content": {
+          "text": "Slide 4 title"
+        },
+        "top": "12px",
+        "left": "15px",
+        "width": "250px",
+        "height": "30px",
+        "animations": []
+      },
+      {
+        "id": 2,
+        "type": "editor",
+        "content": {
+          "text": "Slide 4 text"
+        },
+        "top": "50px",
+        "left": "10px",
+        "width": "250px",
+        "height": "150px",
+        "animations": []
+      }
+    ]
   },
   {
-    "id":    5,
-    "class": "",
-    "show":  false,
-    "title": "Slide 5",
-    "type":  "title_and_body",
-    "body":  "Body of Slide 5",
-    "notes": "Notes for Slide 5"
+    "id":   5,
+    "note": "Notes for Slide 5",
+    "components": [
+      {
+        "id": 1,
+        "type": "editor",
+        "content": {
+          "text": "Slide 5 title"
+        },
+        "top": "12px",
+        "left": "15px",
+        "width": "250px",
+        "height": "30px",
+        "animations": []
+      },
+      {
+        "id": 2,
+        "type": "editor",
+        "content": {
+          "text": "Slide 5 text"
+        },
+        "top": "50px",
+        "left": "10px",
+        "width": "250px",
+        "height": "150px",
+        "animations": []
+      }
+    ]
   }
 ]
