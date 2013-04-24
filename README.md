@@ -16,6 +16,7 @@ Where:
       }
     }
 Or
+
     obj = {
       "id": 2,
       "type": "image",
