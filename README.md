@@ -26,40 +26,48 @@ with this objects:
         "content": {
           "label": "title here",
           "alt": "alt value here",
-          "src": "http://img.url/here.jpg"
+          "src": "http://placehold.it/350x150"
         }
       }
     ];
 
 And this markup:
 
-    <div ng-repeat="obj in objs">
-      <component obj="obj"></component>
-    </div>
+    <component element="obj" ng-repeat="obj in objs"></component>
 
 Result:
 
-    <div ng-repeat="obj in objs">
+    <div
+        element="component"
+        ng-include="'tpls/' + element.type + '.tpl'"
+        ng-repeat="component in slide.components"
+    >
       <div
-        contenteditable="true"
-        class="editor text-content"
-        ng-style="{
-          width: element.width,
-          height: element.height
-        }"
+          contenteditable="true"
+          class="editor text-content"
+          ng-style="{
+            width: element.width,
+            height: element.height
+          }"
+          style="width: 150px; height: 200px;"
       >
-        {{element.content.text}}
+        Slide 4 title
       </div>
     </div>
-    <div ng-repeat="obj in objs">
+    <div
+      ng-include="'tpls/' + element.type + '.tpl'"
+      element="component"
+      ng-repeat="component in slide.components"
+    >
       <div
         class="image-wrap"
         ng-style="{
           width: element.width,
           height: element.height
         }"
+        style="width: 150px; height: 125px;"
       >
-        <img ng-src="{{element.content.src}}" alt="{{element.content.alt}}">
-        <div class="text">{{element.content.label}}</div>
+        <img ng-src="http://placehold.it/350x150" alt="150x100">
+        <div class="text ng-binding">Label for image 1/slide 4</div>
       </div>
     </div>
