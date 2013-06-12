@@ -20,17 +20,17 @@
         <h3>Static Slide with image</h3>
         <img class="component" ph-img="160x160">
       </div>
-      <div class="slide">
-        <h3>Static Slide with video</h3>
-        <video
-          controls
-          width="560"
-          height="315"
-          class="component"
-          src="videos/How_to_make_Waterproof_Firesticks.-2IMLSAGTgg4.og"
-        >
-        </video>
-      </div>
+<!--      <div class="slide">-->
+<!--        <h3>Static Slide with video</h3>-->
+<!--        <video-->
+<!--          controls-->
+<!--          width="560"-->
+<!--          height="315"-->
+<!--          class="component"-->
+<!--          src="videos/How_to_make_Waterproof_Firesticks.-2IMLSAGTgg4.og"-->
+<!--        >-->
+<!--        </video>-->
+<!--      </div>-->
     </section>
     <div class="content">
       <slide ng-repeat="slide in slides" slide-id="{{slide.id}}">
@@ -66,13 +66,14 @@
 <!--    </panel>-->
   </section>
   <footer id="log"></footer>
-  <script src="libs/angular-unstable/angular.min.js"></script>
+  <script src="libs/angular-unstable/angular.js"></script>
   <script src="libs/angular-placeholders/src/img/img.js"></script>
   <script src="scripts/vars.js"></script>
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/directives/component.js"></script>
   <script src="scripts/directives/slide.js"></script>
   <script src="scripts/directives/editor.js"></script>
+  <script src="scripts/directives/image.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/services/slides.js"></script>
   <script src="scripts/services/items.js"></script>

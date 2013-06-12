@@ -47,10 +47,13 @@ $bodyHeight: 200px;
       @extend .preview-common;
     }
   }
+  .image-wrap {
+    border: 1px solid #000;
+  }
 }
 #log {
   bottom:        0;
-  width:         99%;
+  width:         7%;
   left:          10px;
   padding:       10px;
   overflow-y:    auto;

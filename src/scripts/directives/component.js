@@ -1,10 +1,10 @@
 //########################################################################
 //######################START component###################################
 directives.component = function($compile, Logger){
-  return {
-    restrict: 'E',
-    link: function (iScope, iElement, iAttrs) {
-      var log = Logger.log;
+  var linker = function (iScope, iElement, iAttrs) {
+    var log = Logger.log;
+    console.log(iScope.$last);
+    if(iScope.$last === true){
       if(iElement[0].getAttribute('type')){
         log(iAttrs.type);
         iElement.attr(iAttrs.type, '');
@@ -12,6 +12,10 @@ directives.component = function($compile, Logger){
         $compile(iElement)(iScope);
       }
     }
+  };
+  return {
+    restrict: 'E',
+    link:     linker
   };
 };
 //######################END component#####################################

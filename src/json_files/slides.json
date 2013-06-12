@@ -65,14 +65,16 @@
     "components": [
       {
         "id": 1,
-        "type": "editor",
+        "type": "image",
         "content": {
-          "text": "Slide 3 title"
+          "src":   "100x100",
+          "alt":   "alf for image 1/slide 3",
+          "label": "Label for image 1/slide 3"
         },
         "top": "12px",
         "left": "15px",
-        "width": "250px",
-        "height": "30px",
+        "width": "100px",
+        "height": "125px",
         "animations": []
       },
       {
@@ -107,14 +109,16 @@
       },
       {
         "id": 2,
-        "type": "editor",
+        "type": "image",
         "content": {
-          "text": "Slide 4 text"
+          "src":   "150x100",
+          "alt":   "alt for image 1/slide 4",
+          "label": "Label for image 1/slide 4"
         },
         "top": "50px",
         "left": "10px",
-        "width": "250px",
-        "height": "150px",
+        "width": "150px",
+        "height": "125px",
         "animations": []
       }
     ]
@@ -125,26 +129,30 @@
     "components": [
       {
         "id": 1,
-        "type": "editor",
+        "type": "image",
         "content": {
-          "text": "Slide 5 title"
+          "src":   "100x150",
+          "alt":   "alt for image 1/slide 5",
+          "label": "Label for image 1/slide 5"
         },
         "top": "12px",
         "left": "15px",
-        "width": "250px",
-        "height": "30px",
+        "width": "100px",
+        "height": "175px",
         "animations": []
       },
       {
         "id": 2,
-        "type": "editor",
+        "type": "image",
         "content": {
-          "text": "Slide 5 text"
+          "src":   "200x150",
+          "alt":   "alt for image 2/slide 5",
+          "label": "Label for image 2/slide 5"
         },
         "top": "50px",
         "left": "10px",
-        "width": "250px",
-        "height": "150px",
+        "width": "200px",
+        "height": "175px",
         "animations": []
       }
     ]
